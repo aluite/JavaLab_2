@@ -1,1 +1,22 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
+public class HelloWord {
+    public static void main(String[] args) {
+        int a = 12;
+        int b = 5;
+        int c = 8;
+        int d = 23;
+        int e = 19;
+        int temp;
+        if (a > b) { temp = a; a = b; b = temp; }
+        if (c > d) { temp = c; c = d; d = temp; }
+        if (a > c) { temp = a; a = c; c = temp; temp = b; b = d; d = temp; }
+        if (b > c) { temp = b; b = c; c = temp; }
+        if (d > e) { temp = d; d = e; e = temp; }
+        if (c > d) { temp = c; c = d; d = temp; }
+        if (b > c) { temp = b; b = c; c = temp; }
+        System.out.println("Медиана: " + c);
+    }
+}
