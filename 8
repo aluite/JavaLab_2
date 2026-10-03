@@ -1,1 +1,19 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
+public class HelloWord {
+    public static void main(String[] args) {
+        if (args.length != 1){
+            System.out.println("n =");
+            return;
+        }
+        int n = Integer.parseInt(args[0]);
+        if (n<=0){
+            System.out.println("polozitelnoye");
+            return;
+        }
+        String str = String.valueOf(n);
+        System.out.println("Result " + str);
+    }
+}
